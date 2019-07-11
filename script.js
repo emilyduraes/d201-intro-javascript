@@ -1,4 +1,4 @@
-console.log("Hello World!");
+/*console.log("Hello World!");
 
 let nomeDoAluno = prompt('Qual o seu nome?');
 let materia = prompt('Qual a matéria que você cursa?');
@@ -15,4 +15,23 @@ else if (nota >= media - 0.5) {
 
 else {
     alert(`A nota do aluno ${nomeDoAluno} na matéria ${materia} foi insuficiente.`);
+} */
+
+let lances = Number(prompt('Quantos lances de escada você gostaria de criar?'));
+
+while(isNaN(lances)){
+    lances = Number(prompt(`Você digitou um valor inválido, por favor digite apenas valores numéricos.`));
 }
+
+let material = prompt('Qual material você quer usar?');
+let desenho = `${material}`;
+
+i = 1
+
+while(i<=lances){
+    console.log(desenho);
+    desenho = desenho + material;
+    i++;
+}
+
+
